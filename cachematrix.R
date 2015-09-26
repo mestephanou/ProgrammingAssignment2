@@ -58,10 +58,10 @@
 }
   
 # a small example to check that the function works properly  
-f <- make_cache_matrix( matrix(c(20,50, 100, 200), nrow = 2, ncol = 2) )
-summary (f)
-f$get_matrix()
-cache_solve(f)
+i <- make_cache_matrix( matrix(c(20,50, 100, 200), nrow = 2, ncol = 2) )
+summary (i)
+i$get_matrix()
+cache_solve(i)
 
 #rerun the cache_solve for a second time to get he cached value
-cache_solve(f)
+cache_solve(i)
